@@ -1,0 +1,50 @@
+2026-07-30 00:24:29.558 EDT [14326] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-30 00:24:29.561 EDT [14326] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-30 00:24:29.562 EDT [14326] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-30 00:24:29.653 EDT [14359] LOG:  database system was interrupted; last known up at 2026-04-27 14:31:33 EDT
+2026-07-30 00:24:29.802 EDT [14359] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-07-30 00:24:29.806 EDT [14359] LOG:  redo starts at 0/1C7B928
+2026-07-30 00:24:29.806 EDT [14359] LOG:  invalid record length at 0/1C7B960: expected at least 24, got 0
+2026-07-30 00:24:29.806 EDT [14359] LOG:  redo done at 0/1C7B928 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-07-30 00:24:29.813 EDT [14356] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-07-30 00:24:29.826 EDT [14356] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.013 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1C7B960, redo lsn=0/1C7B960
+2026-07-30 00:24:29.828 EDT [14326] LOG:  database system is ready to accept connections
+2026-07-30 00:29:29.938 EDT [14356] LOG:  checkpoint starting: time
+2026-07-30 00:31:07.318 EDT [14356] LOG:  checkpoint complete: wrote 959 buffers (5.9%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=96.944 s, sync=0.322 s, total=97.384 s; sync files=310, longest=0.012 s, average=0.002 s; distance=4489 kB, estimate=4489 kB; lsn=0/20DDFF0, redo lsn=0/20DDF60
+2026-07-30 01:04:49.644 EDT [23350] FATAL:  role "postgres" does not exist
+2026-07-30 01:06:12.038 EDT [25868] ERROR:  invalid input syntax for type uuid: "EXP-2026-0001"
+2026-07-30 01:06:12.038 EDT [25868] CONTEXT:  unnamed portal parameter $1 = '...'
+2026-07-30 01:06:12.038 EDT [25868] STATEMENT:  
+			SELECT hash_transicion 
+			FROM historial_estados_expediente 
+			WHERE id_expediente = $1 
+			ORDER BY registrado_en DESC LIMIT 1
+2026-07-30 01:07:54.774 EDT [27825] ERROR:  column "hash_anterior" of relation "historial_estados_expediente" does not exist at character 139
+2026-07-30 01:07:54.774 EDT [27825] STATEMENT:  
+			INSERT INTO historial_estados_expediente 
+			(id_expediente, estado_anterior, estado_nuevo, motivo_cambio, usuario_id, hash_transicion, hash_anterior)
+			VALUES ($1, $2, $3, $4, $5, $6, $7)
+2026-07-30 01:08:52.684 EDT [29233] ERROR:  column "id" of relation "expedientes" does not exist at character 26
+2026-07-30 01:08:52.684 EDT [29233] STATEMENT:  INSERT INTO expedientes (id, estado) VALUES ('a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11', 'CREADO') ON CONFLICT DO NOTHING;
+2026-07-30 01:09:30.107 EDT [14356] LOG:  checkpoint starting: time
+2026-07-30 01:09:31.306 EDT [14356] LOG:  checkpoint complete: wrote 11 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=1.147 s, sync=0.009 s, total=1.206 s; sync files=11, longest=0.002 s, average=0.001 s; distance=34 kB, estimate=4044 kB; lsn=0/20E7600, redo lsn=0/20E6AA0
+2026-07-30 01:14:30.421 EDT [14356] LOG:  checkpoint starting: time
+2026-07-30 01:14:32.938 EDT [14356] LOG:  checkpoint complete: wrote 24 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.439 s, sync=0.020 s, total=2.523 s; sync files=13, longest=0.004 s, average=0.002 s; distance=104 kB, estimate=3650 kB; lsn=0/2100C00, redo lsn=0/2100BA8
+2026-07-30 01:19:31.037 EDT [14356] LOG:  checkpoint starting: time
+2026-07-30 01:19:31.216 EDT [14356] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.118 s, sync=0.002 s, total=0.183 s; sync files=1, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=3285 kB; lsn=0/2100EA8, redo lsn=0/2100E50
+2026-07-30 01:29:31.408 EDT [14356] LOG:  checkpoint starting: time
+2026-07-30 01:29:31.901 EDT [14356] LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.429 s, sync=0.005 s, total=0.497 s; sync files=5, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=2956 kB; lsn=0/2101578, redo lsn=0/2101520
+2026-07-30 02:54:44.334 EDT [14356] LOG:  checkpoint starting: time
+2026-07-30 02:54:44.493 EDT [14356] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.120 s, sync=0.001 s, total=0.160 s; sync files=1, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=2661 kB; lsn=0/2101860, redo lsn=0/2101808
+2026-07-30 02:59:44.604 EDT [14356] LOG:  checkpoint starting: time
+2026-07-30 02:59:46.686 EDT [14356] LOG:  checkpoint complete: wrote 19 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=1.976 s, sync=0.050 s, total=2.094 s; sync files=19, longest=0.010 s, average=0.003 s; distance=96 kB, estimate=2404 kB; lsn=0/21199D0, redo lsn=0/2119940
+2026-07-30 03:10:33.364 EDT [14602] ERROR:  invalid input syntax for type uuid: "juez_supremo"
+2026-07-30 03:10:33.364 EDT [14602] CONTEXT:  unnamed portal parameter $5 = '...'
+2026-07-30 03:10:33.364 EDT [14602] STATEMENT:  INSERT INTO historial_estados_expediente (id_expediente, estado_anterior, estado_nuevo, motivo_cambio, usuario_id, hash_transicion, hash_anterior) VALUES ($1, $2, $3, $4, $5, $6, $7)
+2026-07-30 03:12:33.477 EDT [14602] ERROR:  invalid input syntax for type uuid: "bleebc99-9c0b-4ef8-bb6d-6bb9bd380a22"
+2026-07-30 03:12:33.477 EDT [14602] CONTEXT:  unnamed portal parameter $5 = '...'
+2026-07-30 03:12:33.477 EDT [14602] STATEMENT:  INSERT INTO historial_estados_expediente (id_expediente, estado_anterior, estado_nuevo, motivo_cambio, usuario_id, hash_transicion, hash_anterior) VALUES ($1, $2, $3, $4, $5, $6, $7)
+2026-07-30 03:14:44.999 EDT [14356] LOG:  checkpoint starting: time
+2026-07-30 03:14:45.483 EDT [14356] LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.421 s, sync=0.012 s, total=0.487 s; sync files=5, longest=0.004 s, average=0.003 s; distance=2 kB, estimate=2164 kB; lsn=0/211A418, redo lsn=0/211A3C0
+2026-07-30 03:19:44.568 EDT [14356] LOG:  checkpoint starting: time
+2026-07-30 03:19:44.992 EDT [14356] LOG:  checkpoint complete: wrote 2 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.210 s, sync=0.002 s, total=0.425 s; sync files=2, longest=0.002 s, average=0.001 s; distance=2 kB, estimate=1948 kB; lsn=0/211AC80, redo lsn=0/211AC28

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribunal Supremo - Justicia Digital 100%</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 0;
+        }
+        .boveda {
+            background-color: #161b22;
+            border: 2px solid #30363d;
+            border-radius: 10px;
+            padding: 30px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #58a6ff;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+        .btn {
+            background-color: #238636;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .btn:hover { background-color: #2ea043; }
+        .btn-rojo { background-color: #d73a49; }
+        .btn-rojo:hover { background-color: #cb2431; }
+        .btn-amarillo { background-color: #b08800; }
+        .btn-amarillo:hover { background-color: #dfab01; }
+        input[type="text"], input[type="file"] {
+            width: 95%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            border: 1px solid #30363d;
+            border-radius: 5px;
+        }
+        .consola {
+            background-color: #000;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            min-height: 80px;
+            word-wrap: break-word;
+        }
+        hr { border: 0; border-top: 1px solid #30363d; margin: 20px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="boveda">
+        <h2>⚖️ JUSTICIA DIGITAL AL 100%</h2>
+        
+        <button class="btn" style="background-color: #1f6feb;" onclick="generarToken()">1. Solicitar Acceso (Login JWT)</button>
+        
+        <label style="display:block; margin-top: 20px;">ID del Expediente:</label>
+        <input type="text" id="expedienteId" value="a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11">
+        
+        <button class="btn" onclick="auditarExpediente()">2. Auditar y Desencriptar</button>
+        <button class="btn btn-rojo" onclick="descargarPDF()">3. Extraer Sentencia (PDF)</button>
+        
+        <hr>
+        
+        <label style="display:block;">Subir Nueva Evidencia Física:</label>
+        <input type="file" id="archivoEvidencia">
+        <button class="btn btn-amarillo" onclick="subirEvidencia()">4. Guardar en Bóveda Forense</button>
+
+        <div class="consola" id="pantalla">Sistemas listos al 100%...</div>
+    </div>
+
+    <script>
+        let tokenGlobal = "";
+
+        // 1. LOGIN
+        async function generarToken() {
+            mostrar("Conectando al servidor para autenticación...");
+            try {
+                const response = await fetch("http://localhost:8080/api/login");
+                const data = await response.json();
+                if (data.token) {
+                    tokenGlobal = data.token;
+                    mostrar("ACCESO CONCEDIDO: Token JWT 100% generado y activo.");
+                } else {
+                    mostrar("ERROR: No se pudo generar el token.");
+                }
+            } catch (error) {
+                mostrar("ERROR DE RED: ¿El servidor Go está corriendo?");
+            }
+        }
+
+        // 2. AUDITORÍA
+        async function auditarExpediente() {
+            const id = document.getElementById("expedienteId").value;
+            if (!tokenGlobal) return mostrar("ACCESO DENEGADO: Falta token. Solicita acceso primero.");
+
+            mostrar("Iniciando auditoría forense al 100%...");
+            try {
+                const response = await fetch(`http://localhost:8080/api/auditoria?id=${id}`, {
+                    headers: { 'Authorization': `Bearer ${tokenGlobal}` }
+                });
+                const data = await response.json();
+                
+                if (response.ok) {
+                    mostrar(`ESTADO: ${data.mensaje}\n\nEVIDENCIA CLASIFICADA:\n${data.evidencia_revelada}`);
+                } else {
+                    mostrar(`ALERTA: ${data.mensaje || data.error}`);
+                }
+            } catch (error) {
+                mostrar("ERROR: Falla en la comunicación con la API.");
+            }
+        }
+
+        // 3. DESCARGAR PDF 100% LEGAL
+        async function descargarPDF() {
+            const id = document.getElementById("expedienteId").value;
+            if (!tokenGlobal) return mostrar("ACCESO DENEGADO: Requiere autorización JWT.");
+
+            mostrar("Generando Acta Judicial en PDF...");
+            try {
+                const response = await fetch(`http://localhost:8080/api/sentencia?id=${id}`, {
+                    headers: { 'Authorization': `Bearer ${tokenGlobal}` }
+                });
+                
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `Sentencia_${id.substring(0,8)}.pdf`;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    mostrar("100% ÉXITO: PDF descargado legalmente en tu dispositivo.");
+                } else {
+                    mostrar("ALERTA: El expediente está alterado o no existe.");
+                }
+            } catch (error) {
+                mostrar("ERROR: Falla al generar el documento.");
+            }
+        }
+
+        // 4. SUBIR EVIDENCIA CON HASH SHA-256
+        async function subirEvidencia() {
+            if (!tokenGlobal) return mostrar("ACCESO DENEGADO: Requiere autorización JWT.");
+            
+            const archivoInput = document.getElementById("archivoEvidencia");
+            if (archivoInput.files.length === 0) return mostrar("ALERTA: Debes seleccionar un archivo 100% real.");
+
+            const archivo = archivoInput.files[0];
+            const formData = new FormData();
+            formData.append("archivo", archivo);
+
+            mostrar("Subiendo archivo y calculando firma SHA-256...");
+            try {
+                const response = await fetch("http://localhost:8080/api/evidencia", {
+                    method: 'POST',
+                    headers: { 'Authorization': `Bearer ${tokenGlobal}` },
+                    body: formData
+                });
+                const data = await response.json();
+                
+                if (response.ok) {
+                    mostrar(`100% ÉXITO: ${data.mensaje}\n\nHASH SHA-256:\n${data.hash_integridad}`);
+                } else {
+                    mostrar(`ALERTA: ${data.mensaje || data.error}`);
+                }
+            } catch (error) {
+                mostrar("ERROR: Fallo al almacenar la evidencia.");
+            }
+        }
+
+        function mostrar(texto) {
+            document.getElementById("pantalla").innerText = texto;
+        }
+    </script>
+</body>
+</html>
