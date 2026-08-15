@@ -20,7 +20,7 @@ COPY . .
 # CGO_ENABLED=0 : Desactiva dependencias de C, creando un binario 100% estático.
 # -trimpath     : Elimina las rutas absolutas de tu servidor de los rastros de error (Privacidad).
 # -ldflags="-w -s": Elimina la tabla de símbolos y la información de depuración (Anti Ingeniería Inversa).
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-w -s" -o /app/secure-backend .
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-w -s" -o /app/secure-backend ./backend
 
 # ==============================================================================
 # ETAPA 2: Producción (Distroless) - 100% Reducido y Seguro
