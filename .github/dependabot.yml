@@ -1,0 +1,33 @@
+# Configuración 100% Legal y Debida para Automatización de Seguridad
+version: 2
+updates:
+  # 1. Auditoría del Código Fuente y Compilador Go (go.mod)
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "03:00" # Se ejecuta en la madrugada para no interrumpir el desarrollo
+      timezone: "America/New_York"
+    open-pull-requests-limit: 5
+    labels:
+      - "security"
+      - "go"
+
+  # 2. Auditoría del Contenedor Distroless (Dockerfile)
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "security"
+      - "infra"
+
+  # 3. Auditoría del Pipeline CI/CD (GitHub Actions)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "security"
+      - "ci-cd"
