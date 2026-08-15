@@ -1,0 +1,29 @@
+# 🛡️ Blindaje de Secretos y Entorno
+.env
+
+# 🗄️ Bloqueo de Base de Datos Local (Privacidad 100%)
+*.db
+*.sqlite
+*.sqlite3
+
+# 🕵️ Bloqueo de Registros Forenses Privados
+*.log
+registro_forense.log
+
+# ⚙️ Ignorar binarios nativos compilados
+justicia_motor
+# Archivos de llaves y secretos
+Justicia_Digital
+*.pem
+*.key
+*.priv
+
+# Logs y bases temporales
+logfile
+*.log
+
+# Binarios y carpetas de compilación
+dist/
+target/
+*.exe
+*.bin

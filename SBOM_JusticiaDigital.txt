@@ -1,0 +1,35 @@
+================================================================================
+SOFTWARE BILL OF MATERIALS (SBOM) Y DECLARACIÓN DE PUREZA DE CÓDIGO
+INFRAESTRUCTURA: JUSTICIA DIGITAL (VERSIÓN 1.0 - AIR-GAPPED)
+================================================================================
+
+1. INFORMACIÓN DEL AUTOR Y PROVEEDOR
+   - Arquitecto Titular: José Emanuel Guadalupe López
+   - Clasificación del Software: Criptografía de Uso Dual / Infraestructura Crítica
+   - Entorno de Compilación: Aislado (Cold Storage / Termux)
+   - Lenguaje Base: Go (Golang) Estáticamente Vinculado
+
+2. DECLARACIÓN JURADA DE CERO DEPENDENCIAS DE TERCEROS (ZERO-TRUST COMPLIANCE)
+   Bajo pena de perjurio y en estricto cumplimiento de las leyes de seguridad 
+   nacional, EL ARQUITECTO declara al 100% que los binarios ejecutables NO 
+   contienen librerías externas, paquetes descargados de repositorios públicos 
+   (ej. GitHub, NPM, PyPI) ni APIs de telemetría comercial.
+
+3. INVENTARIO DE MÓDULOS CRIPTOGRÁFICOS NATIVOS UTILIZADOS
+   El código fuente utiliza única y exclusivamente las siguientes librerías de la 
+   biblioteca estándar inmutable de Go, auditables y deterministas:
+   - crypto/sha256 (Generación de huellas inmutables de la Bóveda Ledger)
+   - crypto/aes    (Cifrado simétrico de bloques)
+   - crypto/cipher (Operación de bloques cifrados)
+   - crypto/rand   (Generación de entropía criptográfica segura)
+   - os / io       (Restricción de permisos WORM a nivel de Kernel)
+
+4. VERIFICACIÓN DE INTEGRIDAD DE LOS ENTREGABLES (FIRMAS SHA-256)
+   - sello_notarial_linux_amd64: [INSERTAR HASH DEL ANEXO A]
+   - sello_notarial_linux_arm64: [INSERTAR HASH DEL ANEXO A]
+   - shamir_forense_linux_amd64: [INSERTAR HASH DEL ANEXO A]
+   - shamir_forense_linux_arm64: [INSERTAR HASH DEL ANEXO A]
+
+================================================================================
+CERTIFICACIÓN DE INMUTABILIDAD Y CADENA DE SUMINISTRO AL 100%
+================================================================================

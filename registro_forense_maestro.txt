@@ -1,0 +1,63 @@
+========================================================
+🛡️  BÓVEDA 'JUSTICIA DIGITAL' - INVENTARIO FORENSE AL 100%
+AUTORIDAD HUMANA: Jose-Emanuel-GL-001
+FECHA DEL SELLADO (UTC): 2026-07-31T03:37:46Z
+ESTADO: 100% LEGAL. 100% DEBIDO. 100% PROPIEDAD INTELECTUAL.
+========================================================
+
+[SELLO SHA-256] 3cb36a5db26ce7cb0f2c6f214d38c816f2c219ecb89ff02302a9c817e7ce1753 | ARCHIVO: .env
+[SELLO SHA-256] ce877e2a202ba96e797fe47cb8a2ca075e4c131219dae7c2b4c37dca0537cd1e | ARCHIVO: .git/COMMIT_EDITMSG
+[SELLO SHA-256] 28d25bf82af4c0e2b72f50959b2beb859e3e60b9630a5e8c603dad4ddb2b6e80 | ARCHIVO: .git/HEAD
+[SELLO SHA-256] c58e606aa1359e784f1bc5a749fcb60cb7137c5f8327f1935e21ee2a176181da | ARCHIVO: .git/config
+[SELLO SHA-256] 85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee | ARCHIVO: .git/description
+[SELLO SHA-256] 94f95b4ce4df0e89b8e267ec1634d9187c71802b78029833fdce4045aa6f08a5 | ARCHIVO: .git/hooks/applypatch-msg.sample
+[SELLO SHA-256] b15d4a0a2e3362aafd28ff178cb5b7ec7a6e64ac29c50209b99458819b6d0cba | ARCHIVO: .git/hooks/commit-msg.sample
+[SELLO SHA-256] a290aca891c7e3729750c56f8d049e554894bc96d240072230e61c756ea3f7e4 | ARCHIVO: .git/hooks/fsmonitor-watchman.sample
+[SELLO SHA-256] f8a8e865862e210edfc56488db28ac0386f6f8f9ad08260d15ce26ffa9de89a5 | ARCHIVO: .git/hooks/post-update.sample
+[SELLO SHA-256] e57b877b3902f9d1aede7779c0f84a410fd93cf0e04bddb351503829ddf08840 | ARCHIVO: .git/hooks/pre-applypatch.sample
+[SELLO SHA-256] 964431168c0016a3c95a162b33521d34d980926b0e482184dfc599af49b5bfd6 | ARCHIVO: .git/hooks/pre-commit.sample
+[SELLO SHA-256] 5efbacab709d11ca887672440664e782d4e11f021879f415b68dfeadeae4624e | ARCHIVO: .git/hooks/pre-merge-commit.sample
+[SELLO SHA-256] 74b00ff982a9de10b548a36682161f01eb40ad8263bbb4cebf5bfcf03ec756ea | ARCHIVO: .git/hooks/pre-push.sample
+[SELLO SHA-256] d844aee21f5842e1e5aac995fac84c1067a878408d8224fe63ae311f7fa41414 | ARCHIVO: .git/hooks/pre-rebase.sample
+[SELLO SHA-256] bf8f6d6f740288cd6553dc2a236e97ee914cacf63c874982756c4cdb23f93bc4 | ARCHIVO: .git/hooks/pre-receive.sample
+[SELLO SHA-256] 1c4e9ad602b0b5175ea931ce7aaf85b420d388bef94048f1e303820a1ac3a7e4 | ARCHIVO: .git/hooks/prepare-commit-msg.sample
+[SELLO SHA-256] 8ff7cb671a9324bd72006d7b1517cc01b798610a59cdaa93ccdc436238f6e881 | ARCHIVO: .git/hooks/push-to-checkout.sample
+[SELLO SHA-256] fd1f34006ffad4ab58df6386e8245cdcadb8f5cc3056256a61033246e89320c3 | ARCHIVO: .git/hooks/sendemail-validate.sample
+[SELLO SHA-256] af1135f0b538e9f877b21b852f61b17f2cf3661df42b8831bd3b598fdc5f2127 | ARCHIVO: .git/hooks/update.sample
+[SELLO SHA-256] ad13599598bad31909cf51dc6a980347f7523eb835e044f0ff5e0911f6168cc7 | ARCHIVO: .git/index
+[SELLO SHA-256] 6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1 | ARCHIVO: .git/info/exclude
+[SELLO SHA-256] 5b41b2476cd86108235527dcad79ddf5d31344261e77218eec78f04801641e99 | ARCHIVO: .git/info/refs
+[SELLO SHA-256] 110089678ea18b63ba372b6e8f51fd32a3fb5e7a1bde411a339d72e0aab064fa | ARCHIVO: .git/logs/HEAD
+[SELLO SHA-256] 10ca7c9bd542a0c2d928df124a28faf45bb4a0001732d5eb1dee294403878812 | ARCHIVO: .git/logs/refs/heads/main
+[SELLO SHA-256] 772c504752d9945085a4e7821c3561d597914bad8bab4aed2262fbfdf71b1f99 | ARCHIVO: .git/logs/refs/remotes/origin/main
+[SELLO SHA-256] 0d24ceca9f2f63d0f1bdb590e96cc65ba4a3aabb6db73222e271d2ce0262b013 | ARCHIVO: .git/objects/info/commit-graph
+[SELLO SHA-256] 963d0bfa9c7c1cb4659924726cb8187277f69b6d0f3eb773f5b9e6ca95a9af78 | ARCHIVO: .git/objects/info/packs
+[SELLO SHA-256] be321c25fa79d64b1c47f0a8e84e45c96fb7a8ca9412e3438cfcc2e524eac3b5 | ARCHIVO: .git/objects/pack/pack-12bff0f05269c4535c6055eaab1c3df4cb3ce033.idx
+[SELLO SHA-256] e6eb812d380f7ce53f29319040ec79859928464975c73e07178fd3164e5e1e09 | ARCHIVO: .git/objects/pack/pack-12bff0f05269c4535c6055eaab1c3df4cb3ce033.pack
+[SELLO SHA-256] 2c47f555f419eb2a6b5d3da092336efbb595a26303f7d3eb02ec8108565d39d5 | ARCHIVO: .git/objects/pack/pack-12bff0f05269c4535c6055eaab1c3df4cb3ce033.rev
+[SELLO SHA-256] 824f63366b76fa6d8d1b7389b7c48e365223ac652dff140d845c39f9a56ee604 | ARCHIVO: .git/packed-refs
+[SELLO SHA-256] e56f3784487c86bf6b3db7d73f19bedec0c52d8bf0c80d572240ed8848460040 | ARCHIVO: .gitignore
+[SELLO SHA-256] a424a204ac9e3508f795fbf672a63fdd0eb700c4f053470dc7ebaf98fc7812dd | ARCHIVO: .terraform/plugin_path
+[SELLO SHA-256] 54b356f32b10209838b292eacf7745dbfccfa4e62aa369f7d1b7b6601671cc8c | ARCHIVO: .terraform.lock.hcl
+[SELLO SHA-256] 27d7b48dcdad338322710cf100607a4e8ead723585e227f2911d413d7788fdff | ARCHIVO: Justicia_Digital
+[SELLO SHA-256] 25cad5d2fb225fbbecfd0154de03088a09a8b6d00abda10fffce4a9f5a68ad64 | ARCHIVO: Justicia_Digital.pub
+[SELLO SHA-256] cbc10ac2a8fb6cdd8093471d7790c16ae97fee656b627de10d7716de7c627120 | ARCHIVO: LICENSE.txt
+[SELLO SHA-256] 4cbf2bea627b1142e1d31b0a97a17571cc069bedd5557bd360e3339217405bb8 | ARCHIVO: README.md
+[SELLO SHA-256] 914b1cad4d6041dd14ddb885f1dd6548fdce57feed033b24e2f41eecf6cae61e | ARCHIVO: backend/evidencia_fisica/914b1cad4d6041dd14ddb885f1dd6548fdce57feed033b24e2f41eecf6cae61e.txt
+[SELLO SHA-256] dc0c01ae4972ff44b02a751dd2f19081fa6382518f2ba36bf01df56f1297365b | ARCHIVO: backend/go.mod
+[SELLO SHA-256] 519fa55ba24452ff76333224b32c7b5a61c47ef298b045adca2c814afaec97f8 | ARCHIVO: backend/go.sum
+[SELLO SHA-256] 021a247e2256dc9672286ceef642dacc2c5f9a86aa4b72c423e8c0eb270c3751 | ARCHIVO: backend/main.go
+[SELLO SHA-256] 914b1cad4d6041dd14ddb885f1dd6548fdce57feed033b24e2f41eecf6cae61e | ARCHIVO: backend/prueba.txt
+[SELLO SHA-256] 91624629c76d14dd8bb22c1c5e7aefcc097b0ef48f2f70d4b998adec1c71100e | ARCHIVO: db/schema.sql
+[SELLO SHA-256] 15743baac3858da47a1a9a7586ca9e53b5646972606f9441404fb7683a5e46cd | ARCHIVO: frontend/index.html
+[SELLO SHA-256] bdfc3f04f28e6226513550fece317851b446d451baa084a13305990f80fc1f54 | ARCHIVO: go.mod
+[SELLO SHA-256] bfc5125762c56a27b9cad62a7bb57e83aeeeb18fed8d5a792d052d32a9ffbf6e | ARCHIVO: hash_forense.go
+[SELLO SHA-256] d650f91c8204d5178eb09302a17ea627af85fa2254bf154b13f206affb507dca | ARCHIVO: logfile
+[SELLO SHA-256] d60275ec1b2567d14a345462cfc1c030bd13ddf500ab8713daf7df9832c87c65 | ARCHIVO: main.tf
+[SELLO SHA-256] e23ed40efdb48fb1fedc6e6f840f8220a530e80bc8b0cfc025003a2e8656ddc9 | ARCHIVO: mapeo_forense.go
+[SELLO SHA-256] e64cbf97f9fea6d84fb3e415e116adbf88513465a0ac8b685de352be6e457eac | ARCHIVO: red_team_ia.go
+[SELLO SHA-256] 2b29bb1f64801e40181dee5a6f106d221d2ce278c551ecdfa73d095365200cad | ARCHIVO: start.sh
+
+========================================================
+✅ ESCANEO COMPLETADO AL 100%. EVIDENCIA GUARDADA FÍSICAMENTE.
+========================================================

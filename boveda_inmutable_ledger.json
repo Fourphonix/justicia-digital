@@ -1,0 +1,16 @@
+[
+  {
+    "indice_táctico": 1,
+    "sello_de_tiempo_utc": "2026-07-31T04:15:00Z",
+    "archivo_evidencia": "fcb85a056cb2c6b7764a3b85b25d832b38a6608c69c1bc0ac34269ca922a3c45",
+    "hash_bloque_anterior": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash_criptografico_absoluto": "c641fbe1ab15ef785e90e9aaea822c014c585a7f646f8bb5e746c342c0575298"
+  },
+  {
+    "indice_táctico": 2,
+    "sello_de_tiempo_utc": "2026-07-31T05:00:34Z",
+    "archivo_evidencia": "fcb85a056cb2c6b7764a3b85b25d832b38a6608c69c1bc0ac34269ca922a3c45",
+    "hash_bloque_anterior": "c641fbe1ab15ef785e90e9aaea822c014c585a7f646f8bb5e746c342c0575298",
+    "hash_criptografico_absoluto": "d286228b9fa40e84623ca3f6d7c08dd57ec8505c833ca62bf55aeeb8836ca574"
+  }
+]
