@@ -1,6 +1,6 @@
 module justicia-digital
 
-go 1.26.5
+go 1.25.3
 
 require (
 	github.com/hashicorp/vault v1.21.4
