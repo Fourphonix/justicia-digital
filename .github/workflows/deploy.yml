@@ -24,8 +24,10 @@ jobs:
           fetch-depth: 0
 
       # Prevención de fuga de credenciales
-      - name: Escaneo de Secretos (Gitleaks)
-        uses: gitleaks/gitleaks-action@v2
+      - name: Escaneo de Secretos (Gitleaks CLI)
+        run: |
+          curl -sSL https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz | tar -xz -C /tmp
+          /tmp/gitleaks detect --verbose --redact
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
