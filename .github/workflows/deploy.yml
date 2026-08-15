@@ -97,7 +97,7 @@ jobs:
       # Autenticación sin secretos estáticos (OpenID Connect)
       # No se guardan llaves permanentes en los secretos del repositorio
       - name: Autenticación Cloud vía OIDC
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           role-to-assume: arn:aws:iam::123456789012:role/GitHubActionsWorkflowRole
           aws-region: us-east-1
