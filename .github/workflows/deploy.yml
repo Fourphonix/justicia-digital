@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout del Código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -57,7 +57,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout del Código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Configurar Docker Buildx
         uses: docker/setup-buildx-action@v4
@@ -92,7 +92,7 @@ jobs:
     environment: production # Exige aprobación manual si está configurado en GitHub
     steps:
       - name: Checkout del Código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       # Autenticación sin secretos estáticos (OpenID Connect)
       # No se guardan llaves permanentes en los secretos del repositorio
