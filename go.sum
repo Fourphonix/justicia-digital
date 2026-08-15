@@ -1,4 +1,4 @@
-github.com/hashicorp/vault v1.21.4 h1:KHGcdSnJtombvae1gDk+jZ50kiFngJPFDOvcCJRnU0c=
-github.com/hashicorp/vault v1.21.4/go.mod h1:KTaqpox1LUSI3vqfpCXO477nPEPOyLVan8JujzoIMvA=
+github.com/corvus-ch/shamir v1.0.1 h1:NaynWw+QQBOYmd/dWmc9xGrUr4cgALhWYJS0252SSnE=
+github.com/corvus-ch/shamir v1.0.1/go.mod h1:1v3RBwJf+boj6ol/2QvtT1F1w5MZRZPbh5uys9ZoMnY=
 github.com/mattn/go-sqlite3 v1.14.49 h1:B8jBHC3xhxZgxztrgruTuLucebnULQnx4W7cF7SAE9w=
 github.com/mattn/go-sqlite3 v1.14.49/go.mod h1:6JTjA44L93a0QCyJef5YvlPoKXntQPjzWv5gtm9sB6w=
