@@ -2,7 +2,7 @@
 # ETAPA 1: Constructor (Builder) - 100% Aislado
 # ==============================================================================
 # Usamos la imagen oficial de Go basada en Alpine por su bajo peso para compilar
-FROM golang:1.22-alpine AS builder
+FROM golang:1.24-alpine AS builder
 
 # Establecer el directorio de trabajo seguro
 WORKDIR /app
