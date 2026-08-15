@@ -4,23 +4,17 @@
 # Reemplazar la versión antigua por la versión correspondiente
 FROM golang:1.24-alpine AS builder
 
-# Establecer el directorio de trabajo seguro
 WORKDIR /app
 
-# Copiar única y exclusivamente los archivos de dependencias primero (Caché seguro)
+# Copiar archivos de dependencias y descargarlas
 COPY go.mod go.sum ./
+RUN go mod download
 
-# Descargar las dependencias y verificar su integridad criptográfica al 100%
-RUN go mod download && go mod verify
-
-# Copiar el resto del código fuente
+# Copiar todo el código fuente
 COPY . .
 
-# Compilación 100% Segura y Estática:
-# CGO_ENABLED=0 : Desactiva dependencias de C, creando un binario 100% estático.
-# -trimpath     : Elimina las rutas absolutas de tu servidor de los rastros de error (Privacidad).
-# -ldflags="-w -s": Elimina la tabla de símbolos y la información de depuración (Anti Ingeniería Inversa).
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-w -s" -o /app/secure-backend ./backend
+# Compilar el binario del backend
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-w -s" -o /app/secure-backend ./backend/main.go
 
 # ==============================================================================
 # ETAPA 2: Producción (Distroless) - 100% Reducido y Seguro
