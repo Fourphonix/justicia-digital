@@ -2,7 +2,7 @@
 # ETAPA 1: Constructor (Builder) - 100% Aislado
 # ==============================================================================
 # Reemplazar la versión antigua por la versión correspondiente
-FROM golang:1.24-alpine AS builder
+FROM golang:alpine AS builder
 
 WORKDIR /app
 
@@ -21,7 +21,7 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-w -s" -o
 # ==============================================================================
 # Usamos una imagen 'static-debian' de Distroless que no tiene consola (sh/bash)
 # La versión 'nonroot' nos asegura ejecutar el proceso con el menor privilegio posible.
-FROM gcr.io/distroless/static-debian12:nonroot
+FROM gcr.io/distroless/static:latest
 
 # Etiquetado legal para auditorías
 LABEL maintainer="tu-empresa-segura"

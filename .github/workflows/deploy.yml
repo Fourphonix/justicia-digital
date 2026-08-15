@@ -78,7 +78,7 @@ jobs:
         with:
           image-ref: 'mi-registro-seguro/paas-backend:${{ github.sha }}'
           format: 'table'
-          exit-code: '1' # Falla el pipeline si encuentra vulnerabilidades CRÍTICAS
+          exit-code: '1'
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
 
