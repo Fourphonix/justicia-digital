@@ -1,0 +1,33 @@
+name: Auto-Merge 100% Legal para Dependabot
+
+on: pull_request
+
+# Permisos estrictos mínimos para aprobar y fusionar
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  dependabot-merge:
+    name: Verificación y Fusión Automática
+    runs-on: ubuntu-latest
+    # Se ejecuta EXCLUSIVAMENTE si el autor es el bot oficial de GitHub
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - name: Extraer Metadatos Criptográficos de Dependabot
+        id: metadata
+        uses: dependabot/fetch-metadata@v2
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Aprobar y Fusionar (Solo Parches y Menores)
+        # Condición estricta: Solo actúa si es una actualización de seguridad menor o parche.
+        if: ${{steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor'}}
+        run: |
+          # 1. Emite una aprobación de revisión auditable en nombre del sistema
+          gh pr review --approve "$PR_URL"
+          # 2. Instruye a GitHub a fusionar SOLO cuando el CI/CD (govulncheck, tests) pase en verde
+          gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
