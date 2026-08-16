@@ -27,7 +27,7 @@ jobs:
           components: clippy, rustfmt
 
       - name: Verificación de Formato
-        run: cargo fmt -- --check
+        run: cargo fmt --all -- --check
 
       - name: Análisis Estático con Clippy (Deny Warnings)
         run: cargo clippy --all-targets --all-features -- -D warnings
