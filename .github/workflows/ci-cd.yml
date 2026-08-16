@@ -22,12 +22,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Configurar Rust Toolchain
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          components: clippy, rustfmt
+        uses: actions-rust-lang/setup-rust-toolchain@v1
 
       - name: Verificación de Formato
-        working-directory: ./nombre_de_la_carpeta_del_proyecto
         run: cargo fmt --all -- --check
 
       - name: Análisis Estático con Clippy (Deny Warnings)
