@@ -1,0 +1,51 @@
+AVISOS DE SOFTWARE DE CODIGO ABIERTO DE TERCEROS (POL-SEC-OSS-001)
+Fecha: 2026-11-09T03:55:28Z
+-----------------------------------------------------------------
+Paquete: justicia-digital (null)
+PURL: pkg:golang/justicia-digital
+Licencia SPDX: Ver repositorio origen
+-----------------------------------------------------------------
+Paquete: github.com/jung-kurt/gofpdf (v1.16.2)
+PURL: pkg:golang/github.com/jung-kurt/gofpdf@v1.16.2
+Licencia SPDX: MIT
+-----------------------------------------------------------------
+Paquete: github.com/lib/pq (v1.12.3)
+PURL: pkg:golang/github.com/lib/pq@v1.12.3
+Licencia SPDX: MIT
+-----------------------------------------------------------------
+Paquete: github.com/golang-jwt/jwt/v5 (v5.3.1)
+PURL: pkg:golang/github.com/golang-jwt/jwt/v5@v5.3.1
+Licencia SPDX: MIT
+-----------------------------------------------------------------
+Paquete: github.com/jung-kurt/gofpdf (v1.16.2)
+PURL: pkg:golang/github.com/jung-kurt/gofpdf@v1.16.2
+Licencia SPDX: MIT
+-----------------------------------------------------------------
+Paquete: backend/go.mod (null)
+PURL: N/A
+Licencia SPDX: Ver repositorio origen
+-----------------------------------------------------------------
+Paquete: github.com/lib/pq (v1.12.3)
+PURL: pkg:golang/github.com/lib/pq@v1.12.3
+Licencia SPDX: MIT
+-----------------------------------------------------------------
+Paquete: go.mod (null)
+PURL: N/A
+Licencia SPDX: Ver repositorio origen
+-----------------------------------------------------------------
+Paquete: github.com/golang-jwt/jwt/v5 (v5.3.1)
+PURL: pkg:golang/github.com/golang-jwt/jwt/v5@v5.3.1
+Licencia SPDX: MIT
+-----------------------------------------------------------------
+Paquete: justicia-digital (null)
+PURL: pkg:golang/justicia-digital
+Licencia SPDX: Ver repositorio origen
+-----------------------------------------------------------------
+Paquete: github.com/corvus-ch/shamir (v1.0.1)
+PURL: pkg:golang/github.com/corvus-ch/shamir@v1.0.1
+Licencia SPDX: MPL-2.0
+-----------------------------------------------------------------
+Paquete: github.com/mattn/go-sqlite3 (v1.14.49)
+PURL: pkg:golang/github.com/mattn/go-sqlite3@v1.14.49
+Licencia SPDX: MIT
+-----------------------------------------------------------------

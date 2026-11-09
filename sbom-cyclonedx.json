@@ -1,0 +1,362 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:bdb104ee-80db-43ce-8ba2-3efc8584b501",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-09T03:55:28+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.76.1"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "5e13574c-bfd7-4836-897a-e0a1a9ee975f",
+      "type": "application",
+      "name": ".",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "48ac368b-d0dd-4dee-a280-e35f10dfc395",
+      "type": "library",
+      "name": "justicia-digital",
+      "purl": "pkg:golang/justicia-digital",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "justicia-digital"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5c446928-3b6d-42bf-8f91-d3b4f5ee9227",
+      "type": "library",
+      "name": "github.com/jung-kurt/gofpdf",
+      "version": "v1.16.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/jung-kurt/gofpdf@v1.16.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/jung-kurt/gofpdf@v1.16.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7f4e82bf-7b44-48fd-b83c-f72632ca3ccf",
+      "type": "library",
+      "name": "github.com/lib/pq",
+      "version": "v1.12.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/lib/pq@v1.12.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/lib/pq@v1.12.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a2afc850-fb55-4192-807a-d108f66ed368",
+      "type": "library",
+      "name": "github.com/golang-jwt/jwt/v5",
+      "version": "v5.3.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/golang-jwt/jwt/v5@v5.3.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/golang-jwt/jwt/v5@v5.3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a4c80787-cf6f-4aeb-aacf-dc2405c02a2b",
+      "type": "library",
+      "name": "github.com/jung-kurt/gofpdf",
+      "version": "v1.16.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/jung-kurt/gofpdf@v1.16.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/jung-kurt/gofpdf@v1.16.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "addeffdf-a01a-4937-9642-189d871fec71",
+      "type": "application",
+      "name": "backend/go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bcbebef3-d7e8-46b0-9487-e153c67b6276",
+      "type": "library",
+      "name": "github.com/lib/pq",
+      "version": "v1.12.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/lib/pq@v1.12.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/lib/pq@v1.12.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e1f7d7ca-a5a1-4397-b8a6-67fe2ebe2988",
+      "type": "application",
+      "name": "go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e70bf099-fb36-43ed-a3f9-960787ef3ad7",
+      "type": "library",
+      "name": "github.com/golang-jwt/jwt/v5",
+      "version": "v5.3.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/golang-jwt/jwt/v5@v5.3.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/golang-jwt/jwt/v5@v5.3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ea851f81-73f6-4a32-a37a-47e2057f99c3",
+      "type": "library",
+      "name": "justicia-digital",
+      "purl": "pkg:golang/justicia-digital",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "justicia-digital"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/corvus-ch/shamir@v1.0.1",
+      "type": "library",
+      "name": "github.com/corvus-ch/shamir",
+      "version": "v1.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/corvus-ch/shamir@v1.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/corvus-ch/shamir@v1.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mattn/go-sqlite3@v1.14.49",
+      "type": "library",
+      "name": "github.com/mattn/go-sqlite3",
+      "version": "v1.14.49",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:golang/github.com/mattn/go-sqlite3@v1.14.49",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "github.com/mattn/go-sqlite3@v1.14.49"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gomod"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "48ac368b-d0dd-4dee-a280-e35f10dfc395",
+      "dependsOn": [
+        "5c446928-3b6d-42bf-8f91-d3b4f5ee9227",
+        "bcbebef3-d7e8-46b0-9487-e153c67b6276",
+        "e70bf099-fb36-43ed-a3f9-960787ef3ad7"
+      ]
+    },
+    {
+      "ref": "5c446928-3b6d-42bf-8f91-d3b4f5ee9227",
+      "dependsOn": []
+    },
+    {
+      "ref": "5e13574c-bfd7-4836-897a-e0a1a9ee975f",
+      "dependsOn": [
+        "addeffdf-a01a-4937-9642-189d871fec71",
+        "e1f7d7ca-a5a1-4397-b8a6-67fe2ebe2988"
+      ]
+    },
+    {
+      "ref": "7f4e82bf-7b44-48fd-b83c-f72632ca3ccf",
+      "dependsOn": []
+    },
+    {
+      "ref": "a2afc850-fb55-4192-807a-d108f66ed368",
+      "dependsOn": []
+    },
+    {
+      "ref": "a4c80787-cf6f-4aeb-aacf-dc2405c02a2b",
+      "dependsOn": []
+    },
+    {
+      "ref": "addeffdf-a01a-4937-9642-189d871fec71",
+      "dependsOn": [
+        "48ac368b-d0dd-4dee-a280-e35f10dfc395"
+      ]
+    },
+    {
+      "ref": "bcbebef3-d7e8-46b0-9487-e153c67b6276",
+      "dependsOn": []
+    },
+    {
+      "ref": "e1f7d7ca-a5a1-4397-b8a6-67fe2ebe2988",
+      "dependsOn": [
+        "ea851f81-73f6-4a32-a37a-47e2057f99c3"
+      ]
+    },
+    {
+      "ref": "e70bf099-fb36-43ed-a3f9-960787ef3ad7",
+      "dependsOn": []
+    },
+    {
+      "ref": "ea851f81-73f6-4a32-a37a-47e2057f99c3",
+      "dependsOn": [
+        "7f4e82bf-7b44-48fd-b83c-f72632ca3ccf",
+        "a2afc850-fb55-4192-807a-d108f66ed368",
+        "a4c80787-cf6f-4aeb-aacf-dc2405c02a2b",
+        "pkg:golang/github.com/corvus-ch/shamir@v1.0.1",
+        "pkg:golang/github.com/mattn/go-sqlite3@v1.14.49"
+      ]
+    },
+    {
+      "ref": "pkg:golang/github.com/corvus-ch/shamir@v1.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/mattn/go-sqlite3@v1.14.49",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}
